@@ -1,0 +1,180 @@
+body{
+  background-color: #d4e9c5;
+}
+.wrap{
+	width:90%;
+	margin:0 auto;
+}
+.main-login {
+    margin-top: 0;
+    position: relative;
+  }
+  
+  @media (max-width: 991px) {
+    .main-login {
+      margin-top: 65px;
+    }
+  }
+  .main-login .box-login, .main-login .box-forgot, .main-login .box-register {
+    background: #FFFFFF;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 15px;
+    margin: -50px 0 65px 0;
+    opacity: 0.9;
+  }
+  .main-login .form fieldset {
+    border: none;
+    margin: 0;
+    padding: 10px 0 0;
+  }
+  .main-login a.forgot {
+    color: #909090;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    top: 9px;
+  }
+  .main-login input.password {
+    padding-right: 130px;
+  }
+  .main-login label {
+    color: #7F7F7F;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .main-login .form-actions:before, .main-login .form-actions:after {
+    content: "";
+    display: table;
+    line-height: 0;
+  }
+  .main-login .form-actions:after {
+    clear: both;
+  }
+  .main-login .form-actions {
+    margin-top: 15px;
+    padding-top: 10px;
+    display: block;
+  }
+  .main-login .new-account {
+    border-top: 1px dotted #EEEEEE;
+    margin-top: 15px;
+    padding-top: 10px;
+    display: block;
+  }
+  .input-icon > input {
+    padding-left: 30px !important;
+    padding-right: 6px;
+  }
+  
+  .input-icon.input-icon-right > input {
+    padding-left: 6px !important;
+    padding-right: 30px !important;
+  }
+  
+  span.input-help > input {
+    padding-left: 30px;
+    padding-right: 6px;
+  }
+  
+  .input-icon > [class*="fa-"], .input-icon > [class*="ti-"] {
+    bottom: 0;
+    color: #000000;
+    display: inline-block;
+    left: 5px;
+    line-height: 35px;
+    padding: 0 3px;
+    position: absolute;
+    top: -1px;
+    z-index: 2;
+  }
+  
+  .input-icon.input-icon-right > [class*="fa-"], .input-icon.input-icon-right > [class*="ti-"] {
+    left: auto;
+    right: 4px;
+  }
+  .radio label.radio-inline, .checkbox label.checkbox-inline {
+    display: inline-block;
+  }
+  
+  .radio-inline, .radio-inline + .radio-inline, .checkbox-inline, .checkbox-inline + .checkbox-inline {
+    margin-right: 10px !important;
+    margin-top: 5px !important;
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group .text {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 7px;
+  }
+  
+  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: default;
+  }
+  
+  /*  Icons */
+  .fa-round {
+    border: 0.1em solid #eee;
+    border-radius: 100%;
+    padding: 0.2em 0.25em 0.15em;
+  }
+  
+  .the-icons {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .the-icons .fa-hover {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    color: #8B91A0;
+    cursor: pointer;
+  }
+  .no-touch .the-icons .fa-hover {
+    -moz-transition: font-size, 0.2s, ease 0s;
+    -o-transition: font-size, 0.2s, ease 0s;
+    -webkit-transition: font-size, 0.2s, ease 0s;
+    transition: font-size, 0.2s, ease 0s;
+  }
+  .no-touch .the-icons .fa-hover:hover {
+     font-size: 20px;
+  }
+  .no-touch .the-icons .fa-hover:hover .fa, .no-touch .the-icons .fa-hover:hover [class*="ti-"] {
+    font-size: 20px;
+  }
+  .the-icons .fa-hover .fa, .the-icons .fa-hover [class*="ti-"] {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: right;
+    width: 32px;
+    color: #007AFF;
+  }
+  .big-icon {
+    font-size: 100px;
+  }
+  
+.form-group {
+    position: relative;
+  }
+  
+  .form-group .text {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 7px;
+  }
+  
+  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: default;
+  }
+  

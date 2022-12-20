@@ -1,0 +1,276 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+/* Toggle Styles */
+#content {
+    padding: 10px 10px;
+}
+
+.table {
+    height: 0px !important;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+#active--link {
+    background-color: #82e433;
+    color: #fff;
+}
+.sidebar--items a:hover,
+.sidebar--bottom-items a:hover {
+    background-color: #82e433;
+    color: #fff;
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+.TableHead {
+    box-sizing: border-box;
+    width: 1302.49px;
+    height: 50px;
+    background: #F9F9F9;
+    border: 1px solid #DDE0E2;
+    border-style: solid !important;
+    border-width: thin !important;
+}
+
+th {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+th:first-child {
+    border-left: 1px solid #dddddd;
+}
+
+tbody:before {
+    content: "@";
+    display: block;
+    line-height: 10px;
+    text-indent: -99999px;
+}
+
+td {
+    text-align: center;
+}
+
+.btn {
+    padding: 5px 5px;
+    background-color: red;
+    color: white;
+    border: 1px solid;
+}
+
+.firstRow {
+    box-sizing: border-box;
+    /* position: absolute; */
+    width: 1302.49px;
+    height: 55px;
+    left: 309.54px;
+    top: 404.06px;
+    background: #FFFFFF;
+    border-width: 1px 1px 1px 1px !important;
+    border-style: solid !important;
+    border-color: #DDE0E2 !important;
+}
+
+/* Button Style */
+h1 {
+    font-size: 42px;
+    color: #2c3e50;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    outline: none;
+    transition: .4s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+input:checked[type="checkbox"] {
+    background: green;
+}
+
+input[type="checkbox"]::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: #8E9AA0;
+    border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: .4s;
+}
+
+input:checked[type="checkbox"]::before {
+    left: 50px;
+    background: #FFFFFF;
+}
+
+.toggle {
+    position: relative;
+    display: inline;
+}
+
+label {
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.onbtn {
+    left: 11px;
+}
+
+.ofbtn {
+
+    right: 8px;
+    color: #8E9AA0;
+}
+
+.btn-primary {
+    background-color: cyan;
+
+}
+
+.btn-success {
+    background-color: yellowgreen;
+}
+
+.btn-warning {
+    background-color: yellow;
+}
+
+.btn-danger {
+    background-color: red;
+}
