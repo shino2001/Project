@@ -355,19 +355,19 @@ function template(array $data)
                         <div class="bee-block bee-block-3 bee-heading">
                             <h3
                                 style="color:#555555;font-size:16px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:left;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;">
-                                <span class="tinyMce-placeholder">Name : ' . $data['gender'] . '</span>
+                                <span class="tinyMce-placeholder">Gender : ' . $data['gender'] . '</span>
                             </h3>
                         </div>
                         <div class="bee-block bee-block-4 bee-heading">
                             <h3
                                 style="color:#555555;font-size:16px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:left;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;">
-                                <span class="tinyMce-placeholder">Name : ' . $data['bloodgrp'] . '</span>
+                                <span class="tinyMce-placeholder">Blood Group : ' . $data['bloodgrp'] . '</span>
                             </h3>
                         </div>
                         <div class="bee-block bee-block-5 bee-heading">
                             <h3
                                 style="color:#555555;font-size:16px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:left;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;">
-                                <span class="tinyMce-placeholder">Name : ' . $data['dob'] . '</span>
+                                <span class="tinyMce-placeholder">DOB : ' . $data['dob'] . '</span>
                             </h3>
                         </div>
                     </div>
