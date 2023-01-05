@@ -41,7 +41,7 @@ if (!isset($_SESSION["email"])) {
                                         <!-- <button type="submit" class="btn btn-primary" style="border-radius:12px;padding:8px; background-color: #d0e0c1;">Search</button> -->
                                         
  <button type="submit" style="float:right;margin-top :-20px;margin-right:10px;"><i class="ri-search-2-line"></i></button>
-<button type="button" id="toggle">Toggle listening</button>   
+<button type="button" id="toggle">start speaking</button>   
                                     </div>
                                 </form>
                             </div>

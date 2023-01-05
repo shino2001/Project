@@ -26,12 +26,12 @@ function init() {
       speech.listening = !speech.listening;
       if (speech.listening) {
         toggle.classList.add('listening');
-        toggle.innerText = 'speak now';
+        toggle.innerText = 'Listening ...';
         speech.recognition.start();
       }
       else {
         toggle.classList.remove('listening');
-        toggle.innerText = 'speak now';
+        toggle.innerText = 'speak now..';
         speech.recognition.stop();
       }
     })

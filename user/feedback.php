@@ -58,13 +58,15 @@ if ($sessObj->isLogged() == true) {
                         <br><label>Email:</label>
                         <label><?php echo $user_data['email'] ?></label>
 
+
                     </div>
                     <div class="form-group col-12 mt-2">
-                        <label for="exampleInputEmail1">Feedback</label>
+                        <label for="exampleInputEmail1">Feedback</label>  
                         <textarea class="form-control" id="feedback" name="feedback" placeholder="Enter Feedback" required></textarea>
                         <span style="color: red; margin-left:55px; font-size:12px"></span>
                         <span style="color: red; margin-left:55px; font-size:12px"></span>
-                    </div>
+                        <button1 type="submit" id="toggle">start speaking</button1>
+                    
                     <div class="col-md-12">
                         <input type="submit" id="mysubmit" name="mysubmit" value="Submit">
                     </div>
@@ -90,4 +92,13 @@ if ($sessObj->isLogged() == true) {
 	border-radius: 4px;
 	cursor: pointer;
   }
+  .button1{
+  background-color: hsl(90, 50%, 30%);
+  border: 0;
+  color: hsl(147, 50%, 47%);
+  margin-block-start: var(--gap);
+  padding: calc(var(--gap) / 2) var(--gap);
+  
+}
 </style>
+<body><script  src="speech-recognition/script.js"></script></body>
