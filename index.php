@@ -28,7 +28,17 @@ include('config.php');
   <link href="css/styl.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsiv.css" rel="stylesheet" />
-
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"1ea8622c605391806b8115dc47744ffb6","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
 </head>
 
 <body>
@@ -420,7 +430,7 @@ include('config.php');
               About Us
             </h4>
             <p>
-              Vitae aut explicabo fugit facere alias distinctio, exem commodi mollitia minusem dignissimos atque asperiores incidunt vel voluptate iste
+            The most comprehensive exam preparation portal for Government and Competitive exams, including Banking, SSC, Railway, NDA, CDS, NRA CET, Teaching, UPSC, State Exams, CLAT, CAT, GATE, AE/JE, BBA, Hotel Management and more
             </p>
             <div class="info_social">
               <a href="">

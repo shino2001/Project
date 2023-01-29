@@ -136,7 +136,7 @@ if (isset($_POST["submit"]))
 							<span style="color: red; margin-left:55px; font-size:12px"></span>
   						<form method="POST" action="#" onsubmit="return validate();" enctype="multipart/form-data"> 
   							<label>Package Name:</label>
-	    					<input type="text" id="name" name="name" placeholder="Add treatment name">
+	    					<input type="text" id="name" name="name" placeholder="Add Course name">
 							<span style="color: red; margin-left:50px; font-size:12px"></span><br>
 							<label>Image:</label><br>
 							<input type="file" id="image" name="image"size="200KB" accept="image/gif,image/jpg,image/JPG, image/jpeg, image/x-ms-bmp, image/x-png">
@@ -145,7 +145,7 @@ if (isset($_POST["submit"]))
 							<input type="text" id="day" name="day" placeholder="Enter duration">
 							<span style="color: red; margin-left:55px; font-size:12px"></span><br>
 							<label>Amount:</label>
-							<input type="number" id="amount" name="amount" min="0" placeholder="Enter Package Cost ">
+							<input type="number" id="amount" name="amount" min="0" placeholder="Enter  Cost ">
     						<span style="color: red; margin-left:55px; font-size:12px"></span><br>
 							<input type="submit" id="mysubmit" name="submit" value="Submit">
 							<span style="color: red; margin-left:55px; font-size:12px"></span>

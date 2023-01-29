@@ -91,14 +91,14 @@ o}
   cursor: pointer;
   display: block;
   margin: auto;
-  background: #688a45;
+  background: #7b8373;
   border: 0;
   outline: none;
   border-radius: 30px;
 }
 .submit-btn:hover {
   color: white;
-  background: #688a45;
+  background: #72766f;
 }
 
 /*

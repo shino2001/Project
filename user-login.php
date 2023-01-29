@@ -33,8 +33,8 @@ if (isset($_POST['submit'])) {
 				header("location:user/index.php");
 				exit(0);
 			} elseif ($_SESSION['type'] == '2') {
-				$_SESSION['message'] = "Welcome Doctor";
-				header("location:doctor/index.php");
+				$_SESSION['message'] = "Welcome ";
+				header("location:emp/index.php");
 				exit(0);
 			} elseif ($_SESSION['type'] == '1') {
 				$_SESSION['message'] = "Welcome";

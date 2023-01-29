@@ -22,7 +22,7 @@ if ($sessObj->isLogged() == true) {
                     <div class="card card-1">
                         <div class="card--data">
                             <div class="card--content">
-                                <h5 class="card--title">Active Appointments</h5>
+                                <h5 class="card--title">Materials</h5>
                                 <!-- <h1>
                                     <//?php
                                     $sql = "SELECT * from tbl_patient where status=0";
@@ -39,7 +39,7 @@ if ($sessObj->isLogged() == true) {
                     <div class="card card-2">
                         <div class="card--data">
                             <div class="card--content">
-                                <h5 class="card--title">Attented Appointments</h5>
+                                <h5 class="card--title">Leaves</h5>
                                 <!-- <h1>
                                     <//?php
                                     $sql = "SELECT * from tbl_doctor where status=0";
@@ -56,7 +56,7 @@ if ($sessObj->isLogged() == true) {
                     <div class="card card-4">
                         <div class="card--data">
                             <div class="card--content">
-                                <h5 class="card--title">Total Appointments</h5>
+                                <h5 class="card--title">Shedules</h5>
                                 <!-- <h1>
                                     </?php
                                     $sql = "SELECT * from tbl_doctor where status= 1";

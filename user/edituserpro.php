@@ -93,7 +93,7 @@ if ($sessObj->isLogged() == true) {
                     </div>
                     <div class="form-group">
                         <label for="bloodgrp">
-                            BLOOD GROUP
+                            Employment Status
                         </label>
                         <input type="text" name="bloodgrp" class="form-control" value="<?php echo $blood; ?>">
                     </div>
