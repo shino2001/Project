@@ -18,7 +18,7 @@
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>JEE<span>VANI</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
 
     </section>
@@ -46,13 +46,13 @@
                 <li>
                     <a href="packages.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item"> Treatment</span>
+                        <span class="sidebar--item"> Courses</span>
                     </a>
                 </li>
                 <li>
                     <a href="treatmenthistory.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item"> Treatment Booking history</span>
+                        <span class="sidebar--item"> Course Registration history</span>
                     </a>
                 </li>
 

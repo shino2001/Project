@@ -14,7 +14,7 @@ if ($sessObj->isLogged() == true) {
         <div class="row mt-5">
             <div class="col-md-12">
                 <div class="alert alert-primary" role="alert">
-                    Welcome Dr. <?= $user_data['email'] ?>
+                    Welcome  <?= $user_data['email'] ?>
                 </div>
             </div>
         </div><br>

@@ -20,14 +20,14 @@ use PHPMailer\PHPMailer\PHPMailer;
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           //Enable implicit TLS encryption
       $mail->Port       = 465;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
   
-      $mail->setFrom('jeevaniayurv@gmail.com', 'Jeevani');
+      $mail->setFrom('jeevaniayurv@gmail.com', 'Simply');
       $mail->addAddress($email);    
   
       //Content
       $mail->isHTML(true);                                  //Set email format to HTML
       $mail->Subject = 'Password Reset Link';
       $mail->Body    = "Your Password Reset Link
-                        <a href='http://localhost/jeevani/change_password.php?email=$email&token=$token'>Click Here</a>";
+                        <a href='http://localhost/Simply/change_password.php?email=$email&token=$token'>Click Here</a>";
       $mail->send();
       return true;
   } catch (Exception $e) {

@@ -19,7 +19,7 @@
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>JEE<span>VANI</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
 
     </section>
@@ -29,7 +29,7 @@
                 <li>
                     <a href="index.php" >
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
-                        <span class="sidebar--item">Doctor Dashboard</span>
+                        <span class="sidebar--item">Dashboard</span>
                     </a>
                 </li>
                 <li>

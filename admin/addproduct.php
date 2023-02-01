@@ -45,7 +45,7 @@ if (isset($_POST["submit"]))
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>Jee<span>vani</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
      
         
@@ -62,13 +62,13 @@ if (isset($_POST["submit"]))
                 <li>
                     <a href="#"id="active--link">
                         <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                        <span class="sidebar--item">Packages</span>
+                        <span class="sidebar--item">Courses</span>
                     </a>
                 </li>
                 <li>
                 <a href="viewpatients.php">
                         <span class="icon icon-3"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item" style="white-space: nowrap;">Patients</span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Users</span>
 
                     </a>
                 </li>
@@ -78,32 +78,32 @@ if (isset($_POST["submit"]))
                  <li>
                     <a href="viewdoctors.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Doctors List</span>
+                        <span class="sidebar--item">Teachers List</span>
                     </a>
                 </li>
                 <li>
                     <a href="viewtreatment.php">
                     <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                     <span class="sidebar--item">Treatment Bookings</span>
+                     <span class="sidebar--item"> Bookings</span>
                    </a>
                 </li>
                 <li>
                     <a href="adddoc.php">
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
-                        <span class="sidebar--item">Add Doctor</span>
+                        <span class="sidebar--item">Add Teachers</span>
                     </a>
                 </li>
             
                 <li>
                     <a href="manage_drleave.php">
                         <span class="icon icon-6"><i class="ri-map-pin-user-line"></i></span>
-                        <span class="sidebar--item">Manage Doctor's Leave</span>
+                        <span class="sidebar--item">Manage Teacher's Leave</span>
                     </a>
                 </li>
                 <li>
                     <a href="removedoctor.php">
                     <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Manage Doctor</span>
+                        <span class="sidebar--item">Manage Teacher</span>
                     </a>
                 </li>
                 <li>
@@ -131,11 +131,11 @@ if (isset($_POST["submit"]))
 			<main>
 				<table>
             	    <div class="container">
-					  <h2 style="color: #9f8e64;">ADD PACKAGE</h2>	
+					  <h2 style="color: #9f8e64;">ADD COURSES</h2>	
                       <input type="submit" style="float:right;" onclick="window.location.href = 'manage_product.php';" value="Manage Product">
 							<span style="color: red; margin-left:55px; font-size:12px"></span>
   						<form method="POST" action="#" onsubmit="return validate();" enctype="multipart/form-data"> 
-  							<label>Package Name:</label>
+  							<label>Course Name:</label>
 	    					<input type="text" id="name" name="name" placeholder="Add treatment name">
 							<span style="color: red; margin-left:50px; font-size:12px"></span><br>
 							<label>Image:</label><br>

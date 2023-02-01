@@ -22,13 +22,13 @@ function sendMail($email, $v_code)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    $mail->setFrom('jeevaniayurv@gmail.com', 'Jeevani');
+    $mail->setFrom('jeevaniayurv@gmail.com', 'Simply');
     $mail->addAddress($email);    
  //Content
  $mail->isHTML(true);                                  //Set email format to HTML
- $mail->Subject = 'Email Verification From Jeevani Ayurvedics';
+ $mail->Subject = 'Email Verification From Simply Learning';
  $mail->Body    = "Thanks for registering! Click the link to verify the email address
-                   <a href='http://localhost/jeevani/verify.php?email=$email&code=$v_code'>Verify</a>";
+                   <a href='http://localhost/Simply/verify.php?email=$email&code=$v_code'>Verify</a>";
  $mail->send();
  return true;
 } catch (Exception $e) {
@@ -120,16 +120,14 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 			
 			<div class="box-register">
 					<center>
-				<h2>Patient Registration</h2>
+				<h2>SIGN UP HERE</h2>
                    </center>
 					<form name="registration" id="registration"  method="post" onSubmit="return valid();">
 						<fieldset>
 							<legend>
 								
 							</legend>
-							<p>
-								Enter your personal details below:
-							</p>
+							
 							<div class="form-group">
 								<input type="text" class="form-control" name="u_name" id="full_name"  placeholder="Full Name" autocomplete="off" required>
 							</div>
@@ -156,21 +154,21 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 									<label for="rg-male">
 										Male
 									</label>
+									<input type="radio" id="rg-female" name="gender" value="others" checked required>
+									<label for="rg-female">
+										Other
+									</label>
 								</div>
 							</div>
 							<div class="form-group">
 								
-								<label for = "bloodgroup"> Choose a Blood Group: </label>
+								<label for = "bloodgroup"> Employment status </label>
 								<select name = "blg" id = "blood"class="form-control" required>
-								<option value="" disabled selected hidden>Choose a blood group</option>
-									<option value ="A+ve">A+ve</option>
-									<option value ="B+ve">A-ve</option>
-									<option value ="AB+ve">B+ve</option>
-									<option value ="O+ve">B-ve</option>
-									<option value ="A-ve">AB+ve</option>
-									<option value ="B-ve">AB-ve</option>
-									<option value ="AB-ve">O+ve</option>
-									<option value ="AB-ve">O-ve</option>
+								<option value="" disabled selected hidden>Employment status</option>
+									<option value ="self-employed">self-employed</option>
+									<option value ="employee">employee</option>
+									<option value ="Student">Student</option>
+									
 								</select>
 							</div>
 							
