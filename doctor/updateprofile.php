@@ -9,9 +9,9 @@ if ($sessObj->isLogged() == true) {
         $fname = $_POST['d_name'];
         $address = $_POST['address'];
         $spec = $_POST['spec'];
-       
+        $fees = $_POST['fees'];;
         $sql1 = mysqli_query($dbObj->connFnc(), "Update tbl_doctor set d_name='$fname',
-   d_address='$address',spec='$spec' where `l_id`='" . $user_data['log_id'] . "'");
+   d_address='$address',spec='$spec',d_fees='$fees' where `l_id`='" . $user_data['log_id'] . "'");
         if ($sql1) {
             echo "<script> alert('Your Profile updated Successfully'); </script>";
         }
@@ -45,17 +45,16 @@ if ($sessObj->isLogged() == true) {
                         <label class="form-label text-dark">Specialization:</label><br>
                         <select name="spec" class="form-control" id="spec" required>
                             <option value="<?= $data['spec'] ?> "><?= $data['spec'] ?> </option>
-                            <option value="IELTS/OET" name="spec">IELTS/OET</option>
-                            <option value="NEET" name="spec">NEET</option>
-                            <option value="KEAM" name="spec">KEAM</option>
-                            <option value="JEE" name="spec">JEE</option>
-                            <option value="PSC" name="spec">PSC</option>
-                            <option value="UPSC" name="spec">UPSC</option>
-                            <option value="RBI" name="spec">RBI</option>
-                            <option value="NDA" name="spec">NDA</option>
+                            <option value="Baala Chikitsa" name="spec">Baala Chikitsa (pediatrician)</option>
+                            <option value="Urdhvanga Chikitsa" name="spec">Urdhvanga Chikitsa (head & Neck)</option>
+                            <option value="Kayachikits" name="spec">Kayachikits (Internal Medicine)</option>
+                            <option value="Shalakya Tantra" name="spec">Shalakya Tantra (ENT & Opthalamology)</option>
                         </select>
                     </div>
-                    
+                    <div class="form-group col-12">
+                        <label class="form-label text-dark">Consultancy Fees</label><br>
+                        <input type="number" class="form-control" id="cfee" min="0" name="fees" value=<?= $data['d_fees'] ?>>
+                    </div>
                     <div class="form-group col-12">
                         <span style="color: red; margin-left:50px; font-size:12px"></span><br>
                         <input type="submit" name="submit" id="submit" value="submit">

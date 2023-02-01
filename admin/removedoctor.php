@@ -25,7 +25,7 @@ if(!isset($_SESSION["email"]))
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
  
     </section>
@@ -57,13 +57,13 @@ if(!isset($_SESSION["email"]))
                  <li>
                     <a href="viewdoctors.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher List</span>
+                        <span class="sidebar--item">Teachers List</span>
                     </a>
                 </li>
                 <li>
                     <a href="adddoc.php">
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
-                        <span class="sidebar--item">Add Teacher</span>
+                        <span class="sidebar--item">Add Teachers</span>
                     </a>
                 </li>
             
@@ -130,7 +130,7 @@ if(!isset($_SESSION["email"]))
             
             <div class="recent--patients">
                 <div class="title">
-                    <h2 class="section--title"><b>Active Teacher</b></h2>
+                    <h2 class="section--title"><b>Active Teachers</b></h2>
                 </div>
                 <div class="table">
                     <table>
@@ -176,7 +176,7 @@ if(!isset($_SESSION["email"]))
             </div>
             <div class="recent--patients">
                 <div class="title">
-                    <h2 class="section--title"> <b>Inactive Teacher</b> </h2>
+                    <h2 class="section--title"> <b>Inactive Teachers</b> </h2>
                     
                 </div>
                 <div class="table">

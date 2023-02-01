@@ -27,7 +27,7 @@ body {
 }
 
 .logo span {
-    color: #556b2f;
+    color: #82e433;
 }
 
 .search--notification--profile {
@@ -170,12 +170,12 @@ a {
 
 .sidebar--items a:hover,
 .sidebar--bottom-items a:hover {
-    background-color:  #000000;
+    background-color: #5073fb;
     color: #fff;
 }
 
 #active--link {
-    background-color:  #000000;
+    background-color: #5073fb;
     color: #fff;
 }
 

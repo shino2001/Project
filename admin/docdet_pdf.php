@@ -18,7 +18,7 @@ $data = mysqli_query($con,$query);
    
     $pdf->cell('10','10','id','1','0','C');
     $pdf->cell('30','10','Name','1','0','C');
-    
+    $pdf->cell('15','10','Fees','1','0','C');
     $pdf->cell('60','10','Email','1','0','C');
     $pdf->cell('60','10','Specilaization','1','1','C');
     
@@ -27,7 +27,7 @@ $data = mysqli_query($con,$query);
     {
         $pdf->cell('10','10',$row['d_id'],'1','0','C');
         $pdf->cell('30','10',$row['d_name'],'1','0','C');
-        
+        $pdf->cell('15','10',$row['d_fees'],'1','0','C');
         $pdf->cell('60','10',$row['email'],'1','0','C');
         $pdf->cell('60','10',$row['spec'],'1','1','C');
     } 

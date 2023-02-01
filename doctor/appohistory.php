@@ -15,21 +15,23 @@ if ($sessObj->isLogged() == true) {
         <div class="row mt-5">
             <div class="col-md-12">
                 <table id="exampl" class="table cell-border " style="width:100%">
-                    <h2 style="color: #9f8e64;">List of Active Materials</h2><br>
+                    <h2 style="color: #9f8e64;">Appoinments history</h2><br>
                     <thead class="TableHead">
                         <tr>
                             <th>Sl No.</th>
                             <th>date</th>
                             <th>time</th>
-                            <th>Materials</th>
-                      
-                         <th>Status</th>
-                            <th>Action</th>
+                            <th>patient</th>
+                            <th>Symptoms</th>
+                            <th>Gender</th>
+                            <th>Fee status</th>
+                            <th>Status</th>
+                            <th>Prescription</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        $timing_data = $dbObj->connFnc()->query("SELECT `appoinment_tbl`.`fee_status`,`appoinment_tbl`.`appo_id`,`appoinment_tbl`.`date`,`appoinment_tbl`.`token`,`appoinment_tbl`.`status`,`tbl_patient`.`u_name`,`appoinment_tbl`.`symptom`,`tbl_patient`.`city`,`tbl_patient`.`gender`,`tbl_patient`.`bloodgrp`,`doctor_timing_tbl`.`start`,`doctor_timing_tbl`.`end` FROM `appoinment_tbl` INNER JOIN `tbl_patient` ON `appoinment_tbl`.`l_id` = `tbl_patient`.`l_id` INNER JOIN `doctor_timing_tbl` on `appoinment_tbl`.`time_id` = `doctor_timing_tbl`.`time_id` LEFT JOIN `tbl_login` ON `doctor_timing_tbl`.`l_id` = `tbl_login`.`l_id` WHERE `tbl_login`.`l_id` = '" . $user_data['log_id'] . "' AND `tbl_login`.`a_id` = 2 AND `appoinment_tbl`.`status` = 0;")->fetch_all(MYSQLI_ASSOC);
+                        $timing_data = $dbObj->connFnc()->query("SELECT `appoinment_tbl`.`fee_status`,`appoinment_tbl`.`appo_id`,`appoinment_tbl`.`date`,`appoinment_tbl`.`token`,`appoinment_tbl`.`prescription`,`tbl_patient`.`u_name`,`appoinment_tbl`.`symptom`,`tbl_patient`.`city`,`tbl_patient`.`gender`,`tbl_patient`.`bloodgrp`,`doctor_timing_tbl`.`start`,`doctor_timing_tbl`.`end` FROM `appoinment_tbl` INNER JOIN `tbl_patient` ON `appoinment_tbl`.`l_id` = `tbl_patient`.`l_id` INNER JOIN `doctor_timing_tbl` on `appoinment_tbl`.`time_id` = `doctor_timing_tbl`.`time_id` LEFT JOIN `tbl_login` ON `doctor_timing_tbl`.`l_id` = `tbl_login`.`l_id` WHERE `tbl_login`.`l_id` = '" . $user_data['log_id'] . "' AND `tbl_login`.`a_id` = 2 AND `appoinment_tbl`.`status` = 3;")->fetch_all(MYSQLI_ASSOC);
                         if (!empty($timing_data)) {
                             $i = 1;
                             foreach ($timing_data as $value) { ?>
@@ -38,33 +40,22 @@ if ($sessObj->isLogged() == true) {
                                     <td><?= date("Y-m-d", strtotime($value['date']))  ?></td>
                                     <td><?= $value['start'] . '-' . $value['end'] ?></td>
                                     <td><?= $value['u_name'] ?></td>
-                                    <td><?= $value['symptom'] ?></td>
+                                    <td><?= $value['symptom']   ?></td>
                                     <td><?= $value['gender'] . ',' . $value['bloodgrp'] ?></td>
                                     <td>
                                         <?= $value['fee_status'] == 1 ? 'Fee Paid' : 'Not Paid' ?>
                                     </td>
                                     <td>
-                                        <?php
-                                        if ($value['status'] == 0) {
-                                            echo "Appoinment Booked";
-                                        } else if ($value['status'] == 3 && $value['fee_status'] == 0) {
-                                            echo "Please Pay to Download prescription";
-                                        } else if ($value['status'] == 3 && $value['fee_status'] == 1) {
-                                            echo "Download prescription";
-                                        } else if ($value['status'] == 4) {
-                                            echo "Appoinment Cancelled by user";
-                                        } else if ($value['status'] == 5) {
-                                            echo "Appoinment Cancelled by doctor";
-                                        }
-                                        ?>
+                                       Completed
                                     </td>
                                     <td>
-                                        <?php
+                                        <!-- <//?php
                                         if ($value['status'] == 0 || $value['status'] == 2) { ?>
-                                            <button onclick="deleteappo(<?= $value['appo_id'] ?>)" class="btn btn-sm btn-danger">X</button>
-                                            <button onclick="openModal(<?= $value['appo_id'] ?>)" class="btn btn-sm btn-success">Complete</button>
-                                        <?php }
-                                        ?>
+                                            <button onclick="deleteappo(<//?= $value['appo_id'] ?>)" class="btn btn-sm btn-danger">X</button>
+                                            <button onclick="openModal(<//?= $value['appo_id'] ?>)" class="btn btn-sm btn-success">Complete</button>
+                                        <//?php }
+                                        ?> -->
+                                        <?= $value['prescription']   ?>
                                     </td>
                                 </tr>
                             <?php $i++;

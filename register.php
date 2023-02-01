@@ -26,7 +26,7 @@ function sendMail($email, $v_code)
     $mail->addAddress($email);    
  //Content
  $mail->isHTML(true);                                  //Set email format to HTML
- $mail->Subject = 'Email Verification From Simply';
+ $mail->Subject = 'Email Verification From Simply Learning';
  $mail->Body    = "Thanks for registering! Click the link to verify the email address
                    <a href='http://localhost/Simply/verify.php?email=$email&code=$v_code'>Verify</a>";
  $mail->send();
@@ -87,7 +87,7 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 <html lang="en">
 
 	<head>
-		<title>SIGN UP</title>
+		<title>User Registration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -120,16 +120,14 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 			
 			<div class="box-register">
 					<center>
-				<h2> Registration</h2>
+				<h2>SIGN UP HERE</h2>
                    </center>
 					<form name="registration" id="registration"  method="post" onSubmit="return valid();">
 						<fieldset>
 							<legend>
 								
 							</legend>
-							<p>
-								Enter your personal details below:
-							</p>
+							
 							<div class="form-group">
 								<input type="text" class="form-control" name="u_name" id="full_name"  placeholder="Full Name" autocomplete="off" required>
 							</div>
@@ -156,21 +154,20 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 									<label for="rg-male">
 										Male
 									</label>
-									<input type="radio" id="rg-male" name="gender" value="other" required>
-									<label for="rg-male">
+									<input type="radio" id="rg-female" name="gender" value="others" checked required>
+									<label for="rg-female">
 										Other
 									</label>
 								</div>
 							</div>
 							<div class="form-group">
 								
-								<label for = "bloodgroup"> Choose employment status: </label>
+								<label for = "bloodgroup"> Employment status </label>
 								<select name = "blg" id = "blood"class="form-control" required>
-								<option value="" disabled selected hidden>Choose employment status</option>
+								<option value="" disabled selected hidden>Employment status</option>
+									<option value ="self-employed">self-employed</option>
+									<option value ="employee">employee</option>
 									<option value ="Student">Student</option>
-									<option value ="Unemployee">Unemployee</option>
-									<option value ="Selfemployee">Selfemployee</option>
-									<option value ="Employee">Employee</option>
 									
 								</select>
 							</div>

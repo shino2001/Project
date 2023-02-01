@@ -38,7 +38,7 @@ if (isset($_POST["submit"]))
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
      
         
@@ -71,13 +71,13 @@ if (isset($_POST["submit"]))
                  <li>
                     <a href="viewdoctors.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher List</span>
+                        <span class="sidebar--item">Teachers List</span>
                     </a>
                 </li>
                 <li>
                     <a href="adddoc.php">
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
-                        <span class="sidebar--item">Add Teacher</span>
+                        <span class="sidebar--item">Add Teachers</span>
                     </a>
                 </li>
             

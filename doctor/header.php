@@ -19,7 +19,7 @@
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
 
     </section>
@@ -29,7 +29,7 @@
                 <li>
                     <a href="index.php" >
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
-                        <span class="sidebar--item">Teacher Dashboard</span>
+                        <span class="sidebar--item">Dashboard</span>
                     </a>
                 </li>
                 <li>
@@ -41,14 +41,14 @@
                 <li>
                     <a href="docappoview.php" >
                         <span class="icon icon-4"><i class="ri-send-plane-fill"></i></span>
-                        <span class="sidebar--item">Materials Manage</span>
+                        <span class="sidebar--item">Appoinment Manage</span>
                     </a>
                 </li>
                 
                 <li>
                     <a href="appohistory.php" >
                         <span class="icon icon-4"><i class="ri-send-plane-fill"></i></span>
-                        <span class="sidebar--item">Class Manage</span>
+                        <span class="sidebar--item">Appoinment History</span>
                     </a>
                 </li>
                 <li>

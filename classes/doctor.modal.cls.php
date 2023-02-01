@@ -1,4 +1,4 @@
-<?php
+    <?php
 class DoctorModalcls extends Dbh
 {
     protected function checkLogidDB(int $log_id)

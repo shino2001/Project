@@ -49,7 +49,7 @@ if (isset($_POST["submit"]))
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
    
     </section>
@@ -81,13 +81,13 @@ if (isset($_POST["submit"]))
                  <li>
                     <a href="viewdoctors.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher List</span>
+                        <span class="sidebar--item">Teachers List</span>
                     </a>
                 </li>
                 <li>
                     <a href="adddoc.php">
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
-                        <span class="sidebar--item">Add Teacher</span>
+                        <span class="sidebar--item">Add Teachers</span>
                     </a>
                 </li>
             
@@ -100,7 +100,7 @@ if (isset($_POST["submit"]))
                 <li>
                     <a href="removedoctor.php">
                     <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Manage Teacher</span>
+                        <span class="sidebar--item">Manage Teachers</span>
                     </a>
                 </li>
                 <li>
@@ -134,7 +134,7 @@ if (isset($_POST["submit"]))
             	    <div class="container">
 					  <h2 style="color: #9f8e64;">EDIT COURSES</h2>
   						<form method="POST" action="#" enctype="multipart/form-data"> 
-  							<label>Package Name:</label>
+  							<label>Course Name:</label>
 	    					<input type="text" id="name" name="name" value="<?php echo $row["p_name"];?> ">
 							<label>Image:</label><br>
     						 

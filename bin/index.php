@@ -6,13 +6,70 @@ include('config.php');
 <html>
 
 <head>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"14b4a70cb09d9bbd743c444e706129e42","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>COPY </title>
+  <title> Jeevani Ayurvedics </title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .dialog-flow {
+      position: fixed;
+      right: 30px;
+      bottom: 50px;
+      width: 350px;
+      max-width: 85vw;
+      max-height: 100vh;
+    }
+
+    #chat-circle {
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      background: #5A5EB9;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: white;
+      /* padding: 28px; */
+      cursor: pointer;
+      box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 60%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #chat-close {
+      position: fixed;
+      bottom: 427px;
+      right: 50px;
+      background: red;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: white;
+      /* padding: 28px; */
+      cursor: pointer;
+      box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 60%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -37,7 +94,7 @@ include('config.php');
 
     <div class="text-box">
       <h1>WELCOME TO JEEVANI AYURVEDICS</h1>
-      <p>Best Solution for Health issues</p>
+      <p>Best Solution for Health issuess</p>
       <a href="user-login.php" class="hero-btn">login </a>
   </section>
 
@@ -152,7 +209,44 @@ include('config.php');
       <i class="fa fa-linkedin"></i>
     </div>
     <p>Designed <i class="fa fa-heart-o"></i> by Abit Mon Rajan</p>
+    <div class="dialog-flow" id="dialog_chat" style="display: none;">
+      <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/186833d9-6bee-41f9-995e-fb021cb15c7b"></iframe>
+    </div>
+
+    <!-- abit -->
+    <!-- <div class="dialog-flow" id="dialog_chat" style="display: none;">
+      <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1f7aae78-c9c0-4a9e-9cd2-d57d6ed5c388"></iframe>
+    </div> -->
+  
+
   </section>
+  <!-- <div id="chat-circle" class="btn btn-raised">
+    <div id="chat-overlay"></div>
+    <i class="material-icons">Chat</i>
+  </div>
+  <div id="chat-close" class="btn btn-raised" style="display: none;">
+    <div id="chat-overlay"></div>
+    <i class="material-icons">X</i>
+  </div>
+  <script src="assets/js/jquery-3.2.1.min.js"></script> -->
+
+  <!-- <script>
+    $("#chat-circle").click(function() {
+      $("#dialog_chat").css('display', 'block');
+      $("#chat-close").css('display', 'flex');
+      $("#chat-circle").css('display', 'none');
+    })
+    $("#chat-close").click(function() {
+      $("#dialog_chat").css('display', 'none');
+      $("#chat-close").css('display', 'none');
+      $("#chat-circle").css('display', 'flex');
+    })
+
+    $(".chat-box-toggle").click(function() {
+      $("#chat-circle").toggle('scale');
+      $(".chat-box").toggle('scale');
+    })
+  </script> -->
 </body>
 
 </html>

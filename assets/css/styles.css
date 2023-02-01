@@ -28,7 +28,7 @@ body {
 
 
 .logo span {
-    color: 	#556b2f;
+    color: #2a4316;
 }
 
 .search--notification--profile {
@@ -70,7 +70,7 @@ body {
 
 .search button i {
     font-size: 1.1rem;
-    color: #000000;
+    color: #5073fb;
 }
 
 .notification--profile {
@@ -86,7 +86,7 @@ body {
 }
 
 .lock {
-    color: #000000;
+    color: #5073fb;
     background-color: rgba(80, 115, 251, .2);
 }
 
@@ -171,12 +171,12 @@ a {
 
 .sidebar--items a:hover,
 .sidebar--bottom-items a:hover {
-    background-color:  #000000;
+    background-color:  #0b0d09;
     color: #fff;
 }
 
 #active--link {
-    background-color:  #000000;
+    background-color:  #0e110b;
     color: #fff;
 }
 

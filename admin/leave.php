@@ -29,7 +29,7 @@ if(!isset($_SESSION["email"]))
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
      
         

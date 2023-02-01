@@ -7,16 +7,7 @@
 body {
     overflow-x: hidden;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    width: 300px;
-    padding-left: 40px;
-}
 
-.logo span {
-    color: #556b2f;
-}
 /* Toggle Styles */
 #content {
     padding: 10px 10px;
@@ -96,12 +87,12 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 #active--link {
-    background-color: #000000;
+    background-color: #131710;
     color: #fff;
 }
 .sidebar--items a:hover,
 .sidebar--bottom-items a:hover {
-    background-color: #000000;
+    background-color: #030302;
     color: #fff;
 }
 .sidebar-nav li a:active,

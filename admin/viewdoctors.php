@@ -24,7 +24,7 @@ if(!isset($_SESSION["email"]))
     <section class="header">
             <div class="logo">
                 <i class="ri-menu-line icon icon-0 menu"></i>
-                <h2>SIM<span>PLY</span></h2>
+                <h2>Sim<span>ply</span></h2>
             </div>
     
     </section>
@@ -65,7 +65,7 @@ if(!isset($_SESSION["email"]))
                     <li>
                     <a href="manage_drleave.php">
                             <span class="icon icon-6"><i class="ri-map-pin-user-line"></i></span>
-                            <span class="sidebar--item">Manage Teachers's Leave</span>
+                            <span class="sidebar--item">Manage Teacher's Leave</span>
                         </a>
                     </li>
                     <li>
@@ -117,7 +117,7 @@ if(!isset($_SESSION["email"]))
                                                 <th>sl no.</th>
                                                 <th>Name</th>
                                                 <th>Address</th>
-                                                
+                                                <th>Fees</th>
                                                 <th>Email</th>
                                                 <th>Specialization</th>		
                                                 <th>Status</th>						
@@ -146,7 +146,7 @@ if(!isset($_SESSION["email"]))
                                                 <td><p><?php echo $d++;?></p></td>
                                                 <td><p><?php echo $res['d_name'];?></p></td>
                                                 <td><p><?php echo $res['d_address'];?></p></td>
-                                               
+                                                <td><p><?php echo $res['d_fees'];?></p></td>
                                                 <td><p><?php echo $emailval ?></p></td>
                                         
                                                 <td><p><?php echo $res['spec'];?></p></td>

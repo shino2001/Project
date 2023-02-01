@@ -13,6 +13,7 @@ if (!isset($_SESSION["email"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/adminstyle.css">
+<link rel="stylesheet" href="speech-recognition/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Admin</title>
 
@@ -24,7 +25,7 @@ if (!isset($_SESSION["email"])) {
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
         <span>
             <div class="card-body">
@@ -35,11 +36,12 @@ if (!isset($_SESSION["email"])) {
                                 <form action="search.php" method="POST">
                                     <div class="input-group mb-3">
                                         <input style="float:right;width: 300px;padding:20px;height:10px;margin-bottom:-10px;background-color:0001" type="text" name="search" required value="<?php if (isset($_GET['search'])) {
-                                                                                                                                                                                                    echo $_GET['search'];
+                                                                                                                                                                                                 echo $_GET['search'];
                                                                                                                                                                                                 } ?>" class="form-control" placeholder="Search Users">
                                         <!-- <button type="submit" class="btn btn-primary" style="border-radius:12px;padding:8px; background-color: #d0e0c1;">Search</button> -->
-                                        <button type="submit" style="float:right;margin-top :-20px;margin-right:10px;"><i class="ri-search-2-line"></i></button>
-
+                                        
+ <button type="submit" style="float:right;margin-top :-20px;margin-right:10px;"><i class="ri-search-2-line"></i></button>
+<button type="button" id="toggle">start speaking</button>   
                                     </div>
                                 </form>
                             </div>
@@ -87,7 +89,7 @@ if (!isset($_SESSION["email"])) {
                 <li>
                     <a href="viewtreatment.php">
                     <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                     <span class="sidebar--item">Courses </span>
+                     <span class="sidebar--item"> Bookings</span>
                    </a>
                 </li>
 
@@ -324,7 +326,7 @@ if (!isset($_SESSION["email"])) {
     </section>
 
 
-
+<script  src="speech-recognition/script.js"></script>
     <script src="assets/js/main.js"></script>
 
 

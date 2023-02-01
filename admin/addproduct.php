@@ -45,7 +45,7 @@ if (isset($_POST["submit"]))
     <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
      
         
@@ -84,7 +84,7 @@ if (isset($_POST["submit"]))
                 <li>
                     <a href="viewtreatment.php">
                     <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                     <span class="sidebar--item">Courses Bookings</span>
+                     <span class="sidebar--item"> Bookings</span>
                    </a>
                 </li>
                 <li>
@@ -103,7 +103,7 @@ if (isset($_POST["submit"]))
                 <li>
                     <a href="removedoctor.php">
                     <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Manage Teacher's</span>
+                        <span class="sidebar--item">Manage Teacher</span>
                     </a>
                 </li>
                 <li>
@@ -135,8 +135,8 @@ if (isset($_POST["submit"]))
                       <input type="submit" style="float:right;" onclick="window.location.href = 'manage_product.php';" value="Manage Product">
 							<span style="color: red; margin-left:55px; font-size:12px"></span>
   						<form method="POST" action="#" onsubmit="return validate();" enctype="multipart/form-data"> 
-  							<label>Package Name:</label>
-	    					<input type="text" id="name" name="name" placeholder="Add Course name">
+  							<label>Course Name:</label>
+	    					<input type="text" id="name" name="name" placeholder="Add treatment name">
 							<span style="color: red; margin-left:50px; font-size:12px"></span><br>
 							<label>Image:</label><br>
 							<input type="file" id="image" name="image"size="200KB" accept="image/gif,image/jpg,image/JPG, image/jpeg, image/x-ms-bmp, image/x-png">
@@ -145,7 +145,7 @@ if (isset($_POST["submit"]))
 							<input type="text" id="day" name="day" placeholder="Enter duration">
 							<span style="color: red; margin-left:55px; font-size:12px"></span><br>
 							<label>Amount:</label>
-							<input type="number" id="amount" name="amount" min="0" placeholder="Enter  Cost ">
+							<input type="number" id="amount" name="amount" min="0" placeholder="Enter Package Cost ">
     						<span style="color: red; margin-left:55px; font-size:12px"></span><br>
 							<input type="submit" id="mysubmit" name="submit" value="Submit">
 							<span style="color: red; margin-left:55px; font-size:12px"></span>

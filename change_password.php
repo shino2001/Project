@@ -4,6 +4,7 @@
   {
     $email=$_GET['email'];
     $npass=md5($_POST['new_password']);
+    
     $cnewpass=md5($_POST['cnew_password']);
     $token=$_GET['token'];
     if(!empty($token))

@@ -22,12 +22,12 @@ function sendMail($email, $password)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    $mail->setFrom('jeevaniayurv@gmail.com', 'Simply');
+    $mail->setFrom('jeevaniayurv@gmail.com', 'Jeevani');
     $mail->addAddress($email);    
  //Content
  $mail->isHTML(true);                                  //Set email format to HTML
- $mail->Subject = 'Simply';
- $mail->Body    = "Welcome to be a part of Simply.<br> 
+ $mail->Subject = ' Jeevani Ayurvedics';
+ $mail->Body    = "Welcome to be a part of Jeevani Ayurvedics.We look forward to ypur services.<br> 
 	  					You can login to the portal using Email=$email Password=$password";
      $mail->send();
  return true;
@@ -114,7 +114,7 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 <section class="header">
         <div class="logo">
             <i class="ri-menu-line icon icon-0 menu"></i>
-            <h2>SIM<span>PLY</span></h2>
+            <h2>Sim<span>ply</span></h2>
         </div>
  
     </section>
@@ -195,7 +195,7 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 			<main>
 			
                 <div class="container">
-                    <h2 style="color: #9f8e64;">ADD TEACHERS</h2><br>
+                    <h2 style="color: #9f8e64;">Add Teacher</h2><br>
                     <form method="POST" action="#"  onsubmit="return validate();">
                        <label>Email:</label>
                         <input type="email" id="email" name="email" placeholder="Email" required>
