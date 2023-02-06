@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 				exit(0);
 			} elseif ($_SESSION['type'] == '2') {
 				$_SESSION['message'] = "Welcome Doctor";
-				header("location:doctor/index.php");
+				header("location:Emp/index.php");
 				exit(0);
 			} elseif ($_SESSION['type'] == '1') {
 				$_SESSION['message'] = "Welcome";
