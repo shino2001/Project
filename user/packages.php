@@ -12,7 +12,7 @@ if ($sessObj->isLogged() == true) {
     <!-- content -->
 
     <div class="overview">
-        <h2 style="color: #9f8e64;margin-top: 10px;margin-bottom:25px">OUR TREATMENTS</h2>
+        <h2 style="color: #9f8e64;margin-top: 10px;margin-bottom:25px">OUR COURSES</h2>
         <input type="hidden" id="user_id" value="<?= $user_data['log_id'] ?>">
         <div class="row">
             <?php
@@ -38,7 +38,7 @@ if ($sessObj->isLogged() == true) {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Hospital visiting date</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">date</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

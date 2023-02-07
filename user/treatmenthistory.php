@@ -11,7 +11,7 @@ if ($sessObj->isLogged() == true) {
     <div class="overview">
         <div class="row m-2">
             <div class="col-lg-12">
-                <h2 style="color: #9f8e64;margin-top: 10px;">Treatment book History</h2>
+                <h2 style="color: #9f8e64;margin-top: 10px;">Course book History</h2>
 
             </div>
         </div>
@@ -22,9 +22,9 @@ if ($sessObj->isLogged() == true) {
                         <tr>
                             <th>Sl.No</th>
                             <th></th>
-                            <th>Treatment</th>
+                            <th>Courses</th>
                             <th>Fee Paid</th>
-                            <th>Hospital visit</th>
+                           
                             <th>Purchase date</th>
                             <th>payment id</th>
                             <th>Status</th>

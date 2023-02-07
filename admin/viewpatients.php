@@ -114,7 +114,7 @@ if(!isset($_SESSION["email"]))
             <div class="table-data">
                 <div class="order">
                     <div class="head">
-                        <h3>Patients</h3>
+                        <h3>Users</h3>
                         <form action="patdet_pdf.php" class="doctor--card" method="POST">
                             <div class="img--box--cover">
                                 <div class="img--box">
@@ -134,7 +134,7 @@ if(!isset($_SESSION["email"]))
                                         <th>Email</th>
                                         <th>Gender</th>	
                                         <th>Dob</th>	
-                                        <th>Blood Group</th>	
+                                        <th>Emp status</th>	
                                             
                                         <th>status</th>													
                                 </tr>

@@ -20,7 +20,7 @@ $data = mysqli_query($con,$query);
     $pdf->cell('60','10','Email','1','0','C');
     $pdf->cell('30','10','Gender','1','0','C');
     $pdf->cell('30','10','DoB','1','0','C');
-    $pdf->cell('33','10','Blood Group','1','1','C');
+    $pdf->cell('33','10','Emp Status','1','1','C');
     
     $pdf->SetFont('arial','','12');
     while($row = mysqli_fetch_assoc($data))   

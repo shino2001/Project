@@ -132,7 +132,7 @@ if (isset($_POST["submit"]))
 				<table>
             	    <div class="container">
 					  <h2 style="color: #9f8e64;">ADD COURSES</h2>	
-                      <input type="submit" style="float:right;" onclick="window.location.href = 'manage_product.php';" value="Manage Product">
+                      <input type="submit" style="float:right;" onclick="window.location.href = 'manage_product.php';" value="Manage Course">
 							<span style="color: red; margin-left:55px; font-size:12px"></span>
   						<form method="POST" action="#" onsubmit="return validate();" enctype="multipart/form-data"> 
   							<label>Course Name:</label>

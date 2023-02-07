@@ -45,15 +45,15 @@ if ($sessObj->isLogged() == true) {
                         <label class="form-label text-dark">Specialization:</label><br>
                         <select name="spec" class="form-control" id="spec" required>
                             <option value="<?= $data['spec'] ?> "><?= $data['spec'] ?> </option>
-                            <option value="Baala Chikitsa" name="spec">Baala Chikitsa (pediatrician)</option>
-                            <option value="Urdhvanga Chikitsa" name="spec">Urdhvanga Chikitsa (head & Neck)</option>
-                            <option value="Kayachikits" name="spec">Kayachikits (Internal Medicine)</option>
-                            <option value="Shalakya Tantra" name="spec">Shalakya Tantra (ENT & Opthalamology)</option>
+                            <option value="NEET" name="spec">NEET</option>
+                            <option value="PSC" name="spec">PSC</option>
+                            <option value="UPSC" name="spec">UPSC</option>
+                            <option value="KEAM" name="spec">KEAM</option>
                         </select>
                     </div>
                     <div class="form-group col-12">
-                        <label class="form-label text-dark">Consultancy Fees</label><br>
-                        <input type="number" class="form-control" id="cfee" min="0" name="fees" value=<?= $data['d_fees'] ?>>
+                        <label class="form-label text-dark">Age</label><br>
+                        <input type="number" class="form-control" id="cfee" min="24" max="60" name="fees" value=<?= $data['d_fees'] ?>>
                     </div>
                     <div class="form-group col-12">
                         <span style="color: red; margin-left:50px; font-size:12px"></span><br>
