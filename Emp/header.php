@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="docsheduler.php" >
+                    <a href="schedule" >
                         <span class="icon icon-2"><i class="ri-send-plane-fill"></i></span>
                         <span class="sidebar--item">Manage Time shedule</span>
                     </a>

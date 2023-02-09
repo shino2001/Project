@@ -21,10 +21,10 @@ if ($sessObj->isLogged() == true) {
                     <thead class="TableHead">
                         <tr>
                             <th>Sl.No</th>
-                            <th>doctor</th>
+                            <th>Teacher</th>
                             <th>Fee</th>
                             <th>Fee status</th>
-                            <th>symptom</th>
+                            
                             <th>date</th>
                             <th>Appoinment Timing</th>
                             <th>Status</th>

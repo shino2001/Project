@@ -81,6 +81,12 @@ if(!isset($_SESSION["email"]))
                         </a>
                     </li>
                     <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
+                    </a>
+                </li>
+                    <li>
                     <a href="removedoctor.php">
                         <span class="icon icon-4"><i class="ri-user-line"></i></span>
                             <span class="sidebar--item">Manage Teacher</span>

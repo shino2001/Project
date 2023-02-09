@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="appoinment.php">
+                    <a href="schedule">
                         <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
                         <span class="sidebar--item">Book Appointment</span>
                     </a>

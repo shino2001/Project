@@ -15,13 +15,13 @@ if ($sessObj->isLogged() == true) {
                 <div class="row form-group mt-3">
                     <div class="form-group col-md-3 space-between">
                         <select name="doctor" class="form-control" id="doctor" onchange="fetchDoctorTime($(this).val())">
-                            <option value="0">Please Select a doctor</option>
+                            <option value="0">Please Select a Techer</option>
                             <?php
                             $docotr_data = $dbObj->connFnc()->query("SELECT `tbl_login`.`l_id`,`tbl_doctor`.`d_name`,`tbl_doctor`.`spec` FROM `tbl_login` INNER JOIN `tbl_doctor` ON `tbl_login`.`l_id` = `tbl_doctor`.`l_id` WHERE `tbl_login`.`a_id` = 2;")->fetch_all(MYSQLI_ASSOC);
                             if (!empty($docotr_data)) {
                                 foreach ($docotr_data as $value) {
                             ?>
-                                    <option value="<?= $value['l_id'] ?>"><?= 'Dr.' . $value['d_name'] . "," . $value['spec'] ?></option>
+                                    <option value="<?= $value['l_id'] ?>"><?= $value['d_name'] . "," . $value['spec'] ?></option>
                             <?php
                                 }
                             }
@@ -46,8 +46,8 @@ if ($sessObj->isLogged() == true) {
 
                 <div class="row form-group">
                     <div class="form-group col-md-3 space-between">
-                        <label for="exampleInputEmail1" class="form-label text-dark">Enter Symptoms</label>
-                        <input type="text" class="form-control" placeholder="Please enter symptoms" id="symptomInp">
+                        <label for="exampleInputEmail1" class="form-label text-dark">Enter resons</label>
+                        <input type="text" class="form-control" placeholder="Please enter resons" id="symptomInp">
                     </div>
                 </div>
                 <div class="form-group col-md-4 space-between mb-3">
@@ -62,10 +62,10 @@ if ($sessObj->isLogged() == true) {
                     <thead class="TableHead">
                         <tr>
                             <th>Sl.No</th>
-                            <th>doctor</th>
+                            <th>Teachers</th>
                             <th>Fee</th>
                             <th>Fee status</th>
-                            <th>symptom</th>
+                            
                             <th>date</th>
                             <th>Appoinment Timing</th>
                             <th>Status</th>
@@ -80,7 +80,7 @@ if ($sessObj->isLogged() == true) {
                             foreach ($timing_data as $value) { ?>
                                 <tr class="firstRow">
                                     <td><?= $i ?></td>
-                                    <td><?= 'Dr.' . $value['d_name'] . ',' . $value['spec'] ?></td>
+                                    <td><?=  $value['d_name'] . ',' . $value['spec'] ?></td>
                                     <td><?= $value['d_fees'] ?></td>
                                     <td>
                                         <?= $value['fee_status'] == 1 ? 'Fee Paid' : 'Not Paid' ?>

@@ -79,6 +79,12 @@ if(!isset($_SESSION["email"]))
                         </a>
                     </li>
                     <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
+                    </a>
+                </li>
+                    <li>
                         <a href="vw_fdbck.php" id="active--link">
                             <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
                             <span class="sidebar--item">Feedbacks</span>

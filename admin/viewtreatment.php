@@ -26,7 +26,7 @@ if(!isset($_SESSION["email"]))
     <section class="header">
             <div class="logo">
                 <i class="ri-menu-line icon icon-0 menu"></i>
-                <h2>Jee<span>vani</span></h2>
+                <h2>Sim<span>ply</span></h2>
             </div>
     
     </section>
@@ -42,13 +42,13 @@ if(!isset($_SESSION["email"]))
                     <li>
                     <a href="addproduct.php">
                             <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                            <span class="sidebar--item">Manage Packages</span>
+                            <span class="sidebar--item">Manage Course</span>
                         </a>
                     </li>
                     <li>
                     <a href="viewpatients.php" >
                             <span class="icon icon-3"><i class="ri-user-line"></i></span>
-                            <span class="sidebar--item" style="white-space: nowrap;">Patients</span>
+                            <span class="sidebar--item" style="white-space: nowrap;">Users</span>
 
                         </a>
                     </li>
@@ -58,33 +58,33 @@ if(!isset($_SESSION["email"]))
                     <li>
                     <a href="viewdoctors.php">
                             <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                            <span class="sidebar--item">Doctors List</span>
+                            <span class="sidebar--item">Teachers List</span>
                         </a>
                     </li>
                     <li>
                     <a href="#"  id="active--link">
                         <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                        <span class="sidebar--item">Treatment Bookings</span>
+                        <span class="sidebar--item">Course Bookings</span>
                     </a>
                 </li>
 
                     <li>
                     <a href="adddoc.php">
                             <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
-                            <span class="sidebar--item">Add Doctor</span>
+                            <span class="sidebar--item">Add Teacher</span>
                         </a>
                     </li>
              
                     <li>
                     <a href="manage_drleave.php">
                             <span class="icon icon-6"><i class="ri-map-pin-user-line"></i></span>
-                            <span class="sidebar--item">Manage Doctors Leave</span>
+                            <span class="sidebar--item">Manage Teachers Leave</span>
                         </a>
                     </li>
                     <li>
                     <a href="removedoctor.php">
                         <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                            <span class="sidebar--item">Manage Doctor</span>
+                            <span class="sidebar--item">Manage Teacher</span>
                         </a>
                     </li>
                     <li>
@@ -115,7 +115,7 @@ if(!isset($_SESSION["email"]))
 				<div class="table-data">
 					<div class="order">
 						<div class="head">
-							<h3>View Treatment Booking</h3>
+							<h3>View Course Booking</h3>
                             <form action="treatment_pdf.php" class="doctor--card" method="POST">
                             <div class="img--box--cover">
                                 <div class="img--box">
@@ -129,9 +129,9 @@ if(!isset($_SESSION["email"]))
 								<tr>
                                 <th>Sl no.</th>
 									<th>Name</th>
-									<th>Treatment Name</th>
+									<th>Course Name</th>
                                     <th></th>
-									<th>Arriving Date</th>
+									<th> Date</th>
                                     <th>Payment Satus</th>
 								</tr>
 							</thead>

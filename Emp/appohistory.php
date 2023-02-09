@@ -21,10 +21,8 @@ if ($sessObj->isLogged() == true) {
                             <th>Sl No.</th>
                             <th>date</th>
                             <th>time</th>
-                            <th>patient</th>
-                            <th>Symptoms</th>
-                            <th>Gender</th>
-                            <th>Fee status</th>
+                            <th>user</th>
+                            
                             <th>Status</th>
                             <th>Prescription</th>
                         </tr>

@@ -26,8 +26,8 @@ function sendMail($email, $password)
     $mail->addAddress($email);    
  //Content
  $mail->isHTML(true);                                  //Set email format to HTML
- $mail->Subject = ' Jeevani Ayurvedics';
- $mail->Body    = "Welcome to be a part of Jeevani Ayurvedics.We look forward to ypur services.<br> 
+ $mail->Subject = ' Simply';
+ $mail->Body    = "Welcome to be a part of Simply<br> 
 	  					You can login to the portal using Email=$email Password=$password";
      $mail->send();
  return true;
@@ -166,6 +166,12 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 				<a href="removedoctor.php">
                     <span class="icon icon-4"><i class="ri-user-line"></i></span>
                         <span class="sidebar--item">Remove Teacher</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
                     </a>
                 </li>
                 <li>

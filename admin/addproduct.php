@@ -107,6 +107,12 @@ if (isset($_POST["submit"]))
                     </a>
                 </li>
                 <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
+                    </a>
+                </li>
+                <li>
                     <a href="vw_fdbck.php">
                         <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
                         <span class="sidebar--item">Feedbacks</span>
@@ -136,7 +142,7 @@ if (isset($_POST["submit"]))
 							<span style="color: red; margin-left:55px; font-size:12px"></span>
   						<form method="POST" action="#" onsubmit="return validate();" enctype="multipart/form-data"> 
   							<label>Course Name:</label>
-	    					<input type="text" id="name" name="name" placeholder="Add treatment name">
+	    					<input type="text" id="name" name="name" placeholder="Add Course name">
 							<span style="color: red; margin-left:50px; font-size:12px"></span><br>
 							<label>Image:</label><br>
 							<input type="file" id="image" name="image"size="200KB" accept="image/gif,image/jpg,image/JPG, image/jpeg, image/x-ms-bmp, image/x-png">
@@ -145,7 +151,7 @@ if (isset($_POST["submit"]))
 							<input type="text" id="day" name="day" placeholder="Enter duration">
 							<span style="color: red; margin-left:55px; font-size:12px"></span><br>
 							<label>Amount:</label>
-							<input type="number" id="amount" name="amount" min="0" placeholder="Enter Package Cost ">
+							<input type="number" id="amount" name="amount" min="0" placeholder="Enter Course Cost ">
     						<span style="color: red; margin-left:55px; font-size:12px"></span><br>
 							<input type="submit" id="mysubmit" name="submit" value="Submit">
 							<span style="color: red; margin-left:55px; font-size:12px"></span>
