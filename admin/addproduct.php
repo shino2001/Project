@@ -93,6 +93,12 @@ if (isset($_POST["submit"]))
                         <span class="sidebar--item">Add Teachers</span>
                     </a>
                 </li>
+                <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
+                    </a>
+                </li>
             
                 <li>
                     <a href="manage_drleave.php">

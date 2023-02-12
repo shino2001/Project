@@ -22,7 +22,7 @@ function sendMail($email, $password)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    $mail->setFrom('jeevaniayurv@gmail.com', 'Jeevani');
+    $mail->setFrom('jeevaniayurv@gmail.com', 'Simply');
     $mail->addAddress($email);    
  //Content
  $mail->isHTML(true);                                  //Set email format to HTML
@@ -153,6 +153,12 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
                     <a href="adddoc.php" id="active--link">
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
                         <span class="sidebar--item">Add Teachers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
                     </a>
                 </li>
 

@@ -34,13 +34,19 @@
                 <li>
                     <a href="schedule">
                         <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                        <span class="sidebar--item">Book Appointment</span>
+                        <span class="sidebar--item">Academic Calendar</span>
                     </a>
                 </li>
                 <li>
-                    <a href="appoinmenthistory.php">
+                    <a href="spell-checker">
                         <span class="icon icon-3"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item" style="white-space: nowrap;">Appointent History</span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Spelling Correction</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="upload">
+                        <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
+                        <span class="sidebar--item">Course Materials </span>
                     </a>
                 </li>
                 <li>

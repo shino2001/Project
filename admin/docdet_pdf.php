@@ -18,9 +18,9 @@ $data = mysqli_query($con,$query);
    
     $pdf->cell('10','10','id','1','0','C');
     $pdf->cell('30','10','Name','1','0','C');
-    $pdf->cell('15','10','Fees','1','0','C');
+    $pdf->cell('15','10','Age','1','0','C');
     $pdf->cell('60','10','Email','1','0','C');
-    $pdf->cell('60','10','Specilaization','1','1','C');
+    $pdf->cell('60','10','Department','1','1','C');
     
     $pdf->SetFont('arial','','12');
     while($row = mysqli_fetch_assoc($data))   

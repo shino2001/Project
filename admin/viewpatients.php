@@ -73,6 +73,12 @@ if(!isset($_SESSION["email"]))
                             <span class="sidebar--item">Add Teacher</span>
                         </a>
                     </li>
+                    <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
+                    </a>
+                </li>
                   
                     <li>
                     <a href="manage_drleave.php">

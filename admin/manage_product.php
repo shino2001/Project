@@ -65,6 +65,19 @@ if (isset($_POST["submit"]))
 
                     </a>
                 </li>
+                <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
+                    </a>
+                </li>
+
 
 
 

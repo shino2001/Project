@@ -61,6 +61,12 @@ if(!isset($_SESSION["email"]))
                             <span class="sidebar--item">Add Teachers</span>
                         </a>
                     </li>
+                    <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
+                    </a>
+                </li>
                  
                     <li>
                     <a href="manage_drleave.php">
@@ -123,9 +129,9 @@ if(!isset($_SESSION["email"]))
                                                 <th>sl no.</th>
                                                 <th>Name</th>
                                                 <th>Address</th>
-                                                <th>Fees</th>
+                                                <th>Age</th>
                                                 <th>Email</th>
-                                                <th>Specialization</th>		
+                                                <th>Department</th>		
                                                 <th>Status</th>						
                                         </tr>
                                     </thead>

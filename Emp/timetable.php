@@ -1,10 +1,11 @@
-
-
-
-
 <?php
-include('session.php');
-include('connect.php');
+require '../db/config.php';
+require '../db/session.contr.cls.php';
+$dbObj = new Dbh;
+$sessObj = new SessionManageCls();
+if ($sessObj->isLogged() == true) {
+    $user_data = $sessObj->getSessionData();
+    require 'header.php';
 ?>
 <!DOCTYPE html>
 
@@ -12,7 +13,7 @@ include('connect.php');
   <head>
     <meta charset="UTF-8">
     
-    <link rel="stylesheet" href="dashbord.css">
+    <link rel="stylesheet" href="docotr_style.css">
   
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,7 +96,7 @@ include('connect.php');
       </div>
       
 <?php
-include('connect.php');
+require '../db/config.php';
 
 
 
