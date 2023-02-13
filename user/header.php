@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Dashboard</title>
+    
 </head>
 
 <body>
@@ -20,12 +21,15 @@
             <i class="ri-menu-line icon icon-0 menu"></i>
             <h2>Sim<span>ply</span></h2>
         </div>
+        
 
     </section>
     <section class="main">
+        
         <div class="sidebar">
             <ul class="sidebar--items">
                 <li>
+                    
                     <a href="index.php">
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
                         <span class="sidebar--item">Dashboard</span>
@@ -37,12 +41,7 @@
                         <span class="sidebar--item">Academic Calendar</span>
                     </a>
                 </li>
-                <li>
-                    <a href="spell-checker">
-                        <span class="icon icon-3"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item" style="white-space: nowrap;">Spelling Correction</span>
-                    </a>
-                </li>
+               
                 <li>
                     <a href="upload">
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
@@ -97,4 +96,6 @@
                 </li>
             </ul>
         </div>
+        
         <div class="main--content">
+            

@@ -110,6 +110,14 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 				}
 		</script>
 	</head>
+	<div id="google_element">
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+                            <script >
+                                function loadGoogleTranslate(){
+                                   new google.translate.TranslateElement("google_element");
+                                }
+                            </script>
+  </div>
 
 	
 

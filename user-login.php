@@ -67,7 +67,14 @@ color: rgb(216, 15, 15);
 font-weight:bold;
     font-family: Helvetica;
 }</style>
-
+<div id="google_element">
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+                            <script >
+                                function loadGoogleTranslate(){
+                                   new google.translate.TranslateElement("google_element");
+                                }
+                            </script>
+  </div>
 <body>
 	<form action="#" method="post">
 		

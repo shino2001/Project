@@ -59,6 +59,7 @@ include('config.php');
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
             <ul class="navbar-nav">
               <li class="nav-item active">
                 <a class="nav-link pl-lg-0" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -79,7 +80,14 @@ include('config.php');
                 <a class="nav-link"  href="user-login.php">Login</a>
               </li>
             </ul>
-           
+            <div id="google_element">
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+                            <script >
+                                function loadGoogleTranslate(){
+                                   new google.translate.TranslateElement("google_element");
+                                }
+                            </script>
+  </div>
           </div>
         </nav>
       </div>

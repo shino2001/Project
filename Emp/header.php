@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" >
+                    <a href="schedule" >
                         <span class="icon icon-2"><i class="ri-send-plane-fill"></i></span>
                         <span class="sidebar--item">Manage Time shedule</span>
                     </a>
@@ -42,6 +42,12 @@
                     <a href="id/id-card.php" >
                         <span class="icon icon-4"><i class="ri-send-plane-fill"></i></span>
                         <span class="sidebar--item">ID card </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="spell-checker">
+                        <span class="icon icon-3"><i class="ri-user-line"></i></span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Spelling Correction</span>
                     </a>
                 </li>
                 
