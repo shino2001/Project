@@ -38,7 +38,7 @@ $data = mysqli_query($con,$query);
     $pdf->cell('13','10','sl no','1','0','C');
     $pdf->cell('30','10','Name','1','0','C');
     $pdf->cell('50','10','Treatment Name','1','0','C');
-    $pdf->cell('50','10','Arriving Date','1','0','C');
+    $pdf->cell('50','10',' Date','1','0','C');
     $pdf->cell('50','10','Payment Status','1','1','C');
     
     $pdf->SetFont('arial','','12');

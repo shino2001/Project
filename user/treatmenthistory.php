@@ -26,7 +26,7 @@ if ($sessObj->isLogged() == true) {
                             <th>Fee Paid</th>
                            
                             <th>Purchase date</th>
-                            <th>payment id</th>
+                          
                             <th>Status</th>
                             <!-- <th>Action</th> -->
                         </tr>
@@ -45,8 +45,8 @@ if ($sessObj->isLogged() == true) {
                                     <td><?= $value['p_name'] ?></td>
                                     <td><?= $value['p_amount'] ?></td>
                                     <td><?= date("Y-m-d", strtotime($value['visit_date'])) ?></td>
-                                    <td><?= date("Y-m-d", strtotime($value['date'])) ?></td>
-                                    <td><?= $value['r_pay_id'] ?> </td>
+                                    <!-- <td><//?= date("Y-m-d", strtotime($value['date'])) ?></td> -->
+                                    <!-- <td><//?= $value['r_pay_id'] ?> </td> -->
                                     <td><span class="label text-light bg-success" style="padding: 10px 10px;border-radius: 10px">Paid</span></td>
                                 </tr>
                             <?php $i++;
@@ -55,7 +55,7 @@ if ($sessObj->isLogged() == true) {
                             ?>
                             <tr class="firstRow">
                                 <td>
-                                    No treatment bookings yet!!!</td>
+                                    No  bookings yet!!!</td>
 
                             </tr>
                         <?php

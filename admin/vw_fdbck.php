@@ -14,7 +14,18 @@ if(!isset($_SESSION["email"]))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+
+
+
   <title>Admin</title>
 
   
@@ -120,6 +131,46 @@ if(!isset($_SESSION["email"]))
 						<div class="head">
 							<h3>Feedback</h3>
 						</div>
+                        
+<?php
+ $sql = "SELECT feedback FROM tbl_feedback";
+$result = $con->query($sql);
+if ($result->num_rows > 0) {
+    // Output data of each row
+    $texts = array();
+    while($row = $result->fetch_assoc()) {
+        $texts[] = $row["feedback"];
+    }
+    $url = 'http://127.0.0.1:5000/sentiment';
+    $data = json_encode(array('texts' => $texts));
+    $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/json\r\n",
+            'method'  => 'POST',
+            'content' => $data,
+        ),
+    );
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    $overall_sentiment = json_decode($result, true)['sentiment'];
+$neg=100 - ($overall_sentiment * 100);
+} else {
+    echo "No feedback data found in the database.";
+}
+?>
+
+
+&nbsp;<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: <?php echo abs($overall_sentiment) * 100; ?>%; background-color:green;">
+  </div>
+</div>
+<span>&nbsp;Positive &nbsp;<?php  echo abs($overall_sentiment) * 100;?> %</span>
+&nbsp;<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: <?php echo $neg; ?>%; background-color:red;">
+  </div>
+  </div>
+  <span>&nbsp;Negative&nbsp;<?php  echo $neg;?> %</span>
+
 						<table>
 							<thead>
 								<tr>

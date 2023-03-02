@@ -9,6 +9,7 @@ if ($sessObj->isLogged() == true) {
    
 ?>
     <!-- content -->
+    
 
     <div class="overview">
         <div class="row mt-5">
@@ -17,8 +18,10 @@ if ($sessObj->isLogged() == true) {
                     Welcome User <?= $user_data['email'] ?>
                 </div>
             </div>
+            
         </div>
     </div>
+    
     <!-- content end -->
 <?php
     require 'footer.php';

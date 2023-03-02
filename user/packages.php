@@ -45,12 +45,13 @@ if ($sessObj->isLogged() == true) {
                     <div class="mb-3">
 
                         <input name="inpDate"min="<?php echo date('Y-m-d'); ?>" class="form-control" id="inpDate" type="date"></textarea>
+                        
                         <input type="hidden" id="modalAppID">
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" onclick="paytreatment()" class="btn btn-primary">Pay & book</button>
+                    <button type="button" onclick="paytreatment()" class="btn btn-primary">Pay </button>
                 </div>
             </div>
         </div>

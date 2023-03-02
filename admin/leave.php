@@ -56,6 +56,12 @@ if(!isset($_SESSION["email"]))
 
                     </a>
                 </li>
+                <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
+                    </a>
+                </li>
 
 
 
@@ -69,6 +75,12 @@ if(!isset($_SESSION["email"]))
                     <a href="adddoc.php">
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
                         <span class="sidebar--item">Add Teacher</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
                     </a>
                 </li>
             
