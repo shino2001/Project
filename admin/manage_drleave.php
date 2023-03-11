@@ -95,6 +95,12 @@ if(!isset($_SESSION["email"]))
                     </a>
                 </li>
                 <li>
+                    <a href="report.php">
+                        <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
+                        <span class="sidebar--item">Course report</span>
+                    </a>
+                </li>
+                <li>
                     <a href="vw_fdbck.php">
                         <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
                         <span class="sidebar--item">Feedbacks</span>

@@ -88,7 +88,14 @@
                         <span class="sidebar--item">Update Password</span>
                     </a>
                 </li>
+                <li>
+                    <a href="Text To Speech">
+                        <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
+                        <span class="sidebar--item">Text to voice</span>
+                    </a>
+                </li>
             </ul>
+
             <ul class="sidebar--bottom-items">
                 <li>
                     <a href="../logout.php">

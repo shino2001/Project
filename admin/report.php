@@ -28,7 +28,43 @@ if(!isset($_SESSION["email"]))
 
   <title>Admin</title>
 
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
+ <script type="text/javascript">
+ google.load("visualization", "1", {packages:["corechart"]});
+ google.setOnLoadCallback(drawChart);
+ function drawChart() {
+ var data = google.visualization.arrayToDataTable([
+
+ ['Course','Fees'],
+ <?php 
+      $query = "SELECT p_name, p_amount FROM tbl_packages";
+
+       $exec = mysqli_query($con,$query);
+       while($row = mysqli_fetch_array($exec)){
+
+       echo "['".$row['p_name']."',".$row['p_amount']."],";
+       }
+       ?> 
+ 
+ ]);
+
+ var options = {
+ title: 'Course and its fees',
+  pieHole: 0,
+          pieSliceTextStyle: {
+            color: 'black',
+          },
+          legend: 'none'
+ };
+ var chart = new google.visualization.BarChart(document.getElementById("columnchart12"));
+ chart.draw(data,options);
+ }
+  
+    </script>
     
 </head>
 
@@ -135,98 +171,12 @@ if(!isset($_SESSION["email"]))
 				<div class="table-data">
 					<div class="order">
 						<div class="head">
-							<h3>Feedback</h3>
+							<h3>Statitics</h3>
 						</div>
-                        
-<?php
- $sql = "SELECT feedback FROM tbl_feedback";
-$result = $con->query($sql);
-if ($result->num_rows > 0) {
-    // Output data of each row
-    $texts = array();
-    while($row = $result->fetch_assoc()) {
-        $texts[] = $row["feedback"];
-    }
-    $url = 'http://127.0.0.1:5000/sentiment';
-    $data = json_encode(array('texts' => $texts));
-    $options = array(
-        'http' => array(
-            'header'  => "Content-type: application/json\r\n",
-            'method'  => 'POST',
-            'content' => $data,
-        ),
-    );
-    $context  = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-    $overall_sentiment = json_decode($result, true)['sentiment'];
-$neg=100 - ($overall_sentiment * 100);
-} else {
-    echo "No feedback data found in the database.";
-}
-?>
+                        <div class="container-fluid">
+ <div id="columnchart12" style="width: 100%; height: 500px;"></div>
+ </div>  
 
-
-&nbsp;<div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: <?php echo abs($overall_sentiment) * 100; ?>%; background-color:green;">
-  </div>
-</div>
-<span>&nbsp;Positive &nbsp;<?php  echo abs($overall_sentiment) * 100;?> %</span>
-&nbsp;<div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: <?php echo $neg; ?>%; background-color:red;">
-  </div>
-  </div>
-  <span>&nbsp;Negative&nbsp;<?php  echo $neg;?> %</span>
-
-						<table>
-							<thead>
-								<tr>
-                                <th>sl no.</th>
-									<th>Name</th>
-									<th>E-mail</th>
-									<th>Feedback</th>
-								</tr>
-							</thead>
-							<tbody>
-							<?php
-                                $d=1;
-                                
-		  					
-		 				   $query="SELECT * FROM tbl_feedback ";
-                                            $data = mysqli_query($con,$query);
-                                            while($res=mysqli_fetch_assoc($data))
-                                            {
-                                                $uid = $res['fr_id'];
-                                                $nameval='';
-                                                $emailval='';
-                                                $lid='';
-                                                $query1="SELECT * FROM tbl_patient where user_id = '$uid' ";
-                                                $data1 = mysqli_query($con,$query1);
-                                                while($res1=mysqli_fetch_assoc($data1))
-                                                {
-                                                        $nameval = $res1['u_name'];
-                                                        $lid = $res1['l_id'];
-                                                }
-                                                $query2="SELECT * FROM tbl_login where l_id = '$lid' ";
-                                                $data2 = mysqli_query($con,$query2);
-                                                while($res2=mysqli_fetch_assoc($data2))
-                                                {
-                                                        $emailval = $res2['email'];
-                                                        
-                                                }
-							?>
-							<tr>
-                            <td><?php echo $d++;?></td>
-								<td><?php echo $nameval;?></td>
-								<td><?php echo  $emailval ; ?></td>
-                                <td><?php echo $res['feedback'];?></td>	
-							</tr>
-							<?php
-							}
-							?>								
-						   	</tbody>
-					    </table>
-					</div>
-				</div>
 			</main>
 		</section>
 	 	<script src="js/script.js"></script>

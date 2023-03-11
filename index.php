@@ -76,6 +76,9 @@ include('config.php');
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donate/donate.html">Donate</a>
+              </li>
 			  <li class="nav-item">
                 <a class="nav-link"  href="user-login.php">Login</a>
               </li>
