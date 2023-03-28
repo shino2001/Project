@@ -31,7 +31,7 @@ include('config.php');
   <script type="text/javascript">
     (function(d, m){
         var kommunicateSettings = 
-            {"appId":"1ea8622c605391806b8115dc47744ffb6","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            {"appId":"16c03fa249d63605a38be6346c6f7f374","popupWidget":true,"automaticChatOpenOnNavigation":true};
         var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
         s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
         var h = document.getElementsByTagName("head")[0]; h.appendChild(s);

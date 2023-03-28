@@ -43,7 +43,7 @@
                         <span class="sidebar--item">Academic Calendar</span>
                     </a>
                 </li>
-               
+                
                 <li>
                     <a href="upload">
                         <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
@@ -60,6 +60,12 @@
                     <a href="treatmenthistory.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
                         <span class="sidebar--item"> Course Registration history</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="search">
+                        <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
+                        <span class="sidebar--item"> search</span>
                     </a>
                 </li>
 
@@ -88,12 +94,12 @@
                         <span class="sidebar--item">Update Password</span>
                     </a>
                 </li>
-                <li>
+               <!-- <li>
                     <a href="Text To Speech">
                         <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
                         <span class="sidebar--item">Text to voice</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
 
             <ul class="sidebar--bottom-items">

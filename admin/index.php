@@ -87,9 +87,9 @@ if (!isset($_SESSION["email"])) {
                 </li>
 
                 <li>
-                    <a href="viewdoctors.php">
+                    <a href="spms">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teachers List</span>
+                        <span class="sidebar--item">Teacher Payroll</span>
                     </a>
                 </li>
                 <li>
@@ -99,6 +99,7 @@ if (!isset($_SESSION["email"])) {
                    </a>
                 </li>
                 
+                
 
                 <li>
                     <a href="manage_drleave.php">
@@ -106,6 +107,7 @@ if (!isset($_SESSION["email"])) {
                         <span class="sidebar--item">Manage Teacher's Leave</span>
                     </a>
                 </li>
+                
                 <li>
                     <a href="removedoctor.php">
                         <span class="icon icon-4"><i class="ri-user-line"></i></span>

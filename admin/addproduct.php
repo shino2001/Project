@@ -75,10 +75,11 @@ if (isset($_POST["submit"]))
 
 
 
-                 <li>
-                    <a href="viewdoctors.php">
+                 
+                <li>
+                    <a href="spms">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teachers List</span>
+                        <span class="sidebar--item">Teacher Payroll</span>
                     </a>
                 </li>
                 <li>

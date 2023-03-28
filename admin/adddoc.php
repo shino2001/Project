@@ -143,10 +143,11 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 
 
 
-                 <li>
-				 <a href="viewdoctors.php">
+                 
+                <li>
+                    <a href="spms">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teachers List</span>
+                        <span class="sidebar--item">Teacher Payroll</span>
                     </a>
                 </li>
                  <li>
@@ -154,6 +155,12 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
                         <span class="sidebar--item">Add Teachers</span>
                     </a>
+                </li>
+                <li>
+                    <a href="viewtreatment.php">
+                    <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                     <span class="sidebar--item"> Bookings</span>
+                   </a>
                 </li>
                 <li>
                     <a href="schedule">

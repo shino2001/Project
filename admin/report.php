@@ -101,12 +101,13 @@ if(!isset($_SESSION["email"]))
 
 
 
-                    <li>
-                    <a href="viewdoctors.php">
-                            <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                            <span class="sidebar--item">Teachers List</span>
-                        </a>
-                    </li>
+                    
+                <li>
+                    <a href="spms">
+                        <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
+                        <span class="sidebar--item">Teacher Payroll</span>
+                    </a>
+                </li>
                     <a href="adddoc.php">
                             <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
                             <span class="sidebar--item">Add Teachers</span>
@@ -138,13 +139,19 @@ if(!isset($_SESSION["email"]))
                     </a>
                 </li>
                 <li>
-                    <a href="report.php">
+                    <a href="viewtreatment.php">
+                    <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                     <span class="sidebar--item"> Bookings</span>
+                   </a>
+                </li>
+                <li>
+                    <a href="report.php" id="active--link">
                         <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
                         <span class="sidebar--item">Course report</span>
                     </a>
                 </li>
                     <li>
-                        <a href="vw_fdbck.php" id="active--link">
+                        <a href="vw_fdbck.php" >
                             <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
                             <span class="sidebar--item">Feedbacks</span>
                         </a>

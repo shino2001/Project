@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 require '../db/config.php';
 require '../db/session.contr.cls.php';
