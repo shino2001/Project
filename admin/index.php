@@ -53,6 +53,7 @@ if (!isset($_SESSION["email"])) {
     </section>
     <section class="main">
         <div class="sidebar">
+            
             <ul class="sidebar--items">
                 <li>
                     <a href="#" id="active--link">
@@ -86,12 +87,7 @@ if (!isset($_SESSION["email"])) {
                     </a>
                 </li>
 
-                <li>
-                    <a href="spms">
-                        <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher Payroll</span>
-                    </a>
-                </li>
+                
                 <li>
                     <a href="viewtreatment.php">
                     <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>

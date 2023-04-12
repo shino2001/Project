@@ -3,7 +3,7 @@
 Class DBConnection{
     protected $db;
     function __construct(){
-        $this->db = new mysqli('localhost','root','','spms_db');
+        $this->db = new mysqli('localhost','root','','Simply');
         if(!$this->db){
             die("Database Connection Error.");
         }

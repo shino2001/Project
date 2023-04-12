@@ -42,7 +42,7 @@ if(!isset($_SESSION["email"]))
                     <li>
                     <a href="addproduct.php">
                             <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                            <span class="sidebar--item">Manage Course</span>
+                            <span class="sidebar--item"> Course</span>
                         </a>
                     </li>
                     <li>
@@ -56,16 +56,11 @@ if(!isset($_SESSION["email"]))
 
 
                     
-                <li>
-                    <a href="spms">
-                        <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher Payroll</span>
-                    </a>
-                </li>
+                
                     <li>
-                    <a href="#"  id="active--link">
+                    <a href="schedule">
                         <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                        <span class="sidebar--item">Course Bookings</span>
+                        <span class="sidebar--item">Academic Calendar</span>
                     </a>
                 </li>
 
@@ -94,6 +89,18 @@ if(!isset($_SESSION["email"]))
                             <span class="sidebar--item">Manage Teacher</span>
                         </a>
                     </li>
+                    <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="report.php">
+                        <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
+                        <span class="sidebar--item">Course report</span>
+                    </a>
+                </li>
                     <li>
                         <a href="vw_fdbck.php">
                             <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
@@ -125,9 +132,7 @@ if(!isset($_SESSION["email"]))
 							<h3>View Course Booking</h3>
                             <form action="treatment_pdf.php" class="doctor--card" method="POST">
                             <div class="img--box--cover">
-                                <div class="img--box">
-                                    <button type="submit" name="btn_pdf"class="btn"><i class="fa fa-download "></i> Download</button>
-                                </div>
+                                
                         </form>
                         </div>
 						</div>

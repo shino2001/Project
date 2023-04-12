@@ -17,7 +17,7 @@ if($_SESSION['type'] != 1 && in_array($page,array('maintenance','admin','manage_
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo ucwords(str_replace('_',' ',$page)) ?>Simply</title>
+    <title><?php echo ucwords(str_replace('_',' ',$page)) ?> | Simple Payroll System</title>
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../summernote/summernote-lite.min.css">
@@ -132,15 +132,17 @@ if($_SESSION['type'] != 1 && in_array($page,array('maintenance','admin','manage_
     <main>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient" id="topNavBar">
         <div class="container">
-            <a class="navbar-brand" href="../../index.php">
-            Simply
+            <a class="navbar-brand" href="./">
+            Simple Payroll System
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo ($page == 'home')? 'active' : '' ?>" aria-current="page" href="./"><i class="fa fa-home"></i> Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link  <?php echo ($page == 'employees')? 'active' : '' ?>" href="./?page=employees"><i class="fa fa-user-tie"></i> Employees</a>
                     </li>
@@ -151,9 +153,11 @@ if($_SESSION['type'] != 1 && in_array($page,array('maintenance','admin','manage_
                     <li class="nav-item">
                         <a class="nav-link  <?php echo ($page == 'tax_table')? 'active' : '' ?>" href="./?page=tax_table"><i class="fa fa-table"></i> Tax Table</a>
                     </li>
-                    
                     <li class="nav-item">
-                        <a class="nav-link" href="./?page=maintenance"><i class="fa fa-cogs"></i> Department</a>
+                        <a class="nav-link <?php echo ($page == 'admin')? 'active' : '' ?>" aria-current="page" href="./?page=admin"><i class="fa fa-users"></i> Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./?page=maintenance"><i class="fa fa-cogs"></i> Maintenance</a>
                     </li>
                     <?php endif; ?>
                     
@@ -161,7 +165,13 @@ if($_SESSION['type'] != 1 && in_array($page,array('maintenance','admin','manage_
             </div>
             <div>
             <div class="dropdown">
-                
+                <button class="btn btn-secondary dropdown-toggle bg-transparent  text-light border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Hello <?php echo $_SESSION['fullname'] ?>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="./?page=manage_account">Manage Account</a></li>
+                    <li><a class="dropdown-item" href="./../Actions.php?a=logout">Logout</a></li>
+                </ul>
             </div>
             </div>
         </div>

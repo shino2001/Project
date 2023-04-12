@@ -57,9 +57,27 @@ if(!isset($_SESSION["email"]))
                     </a>
                 </li>
                 <li>
+                    <a href="adddoc.php">
+                        <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
+                        <span class="sidebar--item">Add Teachers</span>
+                    </a>
+                </li>
+                <li>
                     <a href="schedule">
                         <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
                         <span class="sidebar--item">Academic Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="viewtreatment.php">
+                    <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                     <span class="sidebar--item"> Bookings</span>
+                   </a>
+                </li>
+                <li>
+                    <a href="manage_drleave.php" id="active--link">
+                        <span class="icon icon-6"><i class="ri-map-pin-user-line"></i></span>
+                        <span class="sidebar--item">Manage Teacher's Leave</span>
                     </a>
                 </li>
 
@@ -68,32 +86,29 @@ if(!isset($_SESSION["email"]))
                  <li>
                     <a href="viewdoctors.php">
                         <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher List</span>
+                        <span class="sidebar--item">Manage Teacher </span>
                     </a>
                 </li>
+                
+            
+                
                 <li>
-                    <a href="adddoc.php">
-                        <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
-                        <span class="sidebar--item">Add Teacher</span>
+                    <a href="removedoctor.php">
+                    <span class="icon icon-4"><i class="ri-user-line"></i></span>
+                        <span class="sidebar--item">Manage Teacher</span>
                     </a>
                 </li>
+                
                 <li>
                     <a href="id">
                         <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
                         <span class="sidebar--item">Employee Id card</span>
                     </a>
                 </li>
-            
                 <li>
-                    <a href="manage_drleave.php" id="active--link">
-                        <span class="icon icon-6"><i class="ri-map-pin-user-line"></i></span>
-                        <span class="sidebar--item">Manage Teacher's Leave</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="removedoctor.php">
-                    <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Manage Teacher</span>
+                    <a href="report.php">
+                        <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
+                        <span class="sidebar--item">Course report</span>
                     </a>
                 </li>
                 <li>

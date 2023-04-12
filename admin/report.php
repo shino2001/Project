@@ -102,12 +102,7 @@ if(!isset($_SESSION["email"]))
 
 
                     
-                <li>
-                    <a href="spms">
-                        <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher Payroll</span>
-                    </a>
-                </li>
+                
                     <a href="adddoc.php">
                             <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
                             <span class="sidebar--item">Add Teachers</span>

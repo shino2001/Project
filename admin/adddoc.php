@@ -144,16 +144,17 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
 
 
                  
-                <li>
-                    <a href="spms">
-                        <span class="icon icon-4"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item">Teacher Payroll</span>
-                    </a>
-                </li>
+                
                  <li>
                     <a href="adddoc.php" id="active--link">
                         <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
                         <span class="sidebar--item">Add Teachers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
                     </a>
                 </li>
                 <li>
@@ -162,12 +163,7 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
                      <span class="sidebar--item"> Bookings</span>
                    </a>
                 </li>
-                <li>
-                    <a href="schedule">
-                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
-                        <span class="sidebar--item">Academic Calendar</span>
-                    </a>
-                </li>
+                
 
                 <li>
 				<a href="manage_drleave.php">
@@ -178,7 +174,7 @@ $duplicate=mysqli_query($con, "SELECT * from tbl_login WHERE email='$email'");
                 <li>
 				<a href="removedoctor.php">
                     <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">Remove Teacher</span>
+                        <span class="sidebar--item">Manage Teacher</span>
                     </a>
                 </li>
                 <li>

@@ -75,7 +75,26 @@ if (isset($_POST["submit"]))
 
                     </a>
                 </li>
+                <li>
+                    <a href="adddoc.php">
+                        <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
+                        <span class="sidebar--item">Add Teachers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Academic Calendar</span>
+                    </a>
+</li>
 
+<li>
+                    <a href="viewtreatment.php">
+                    <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                     <span class="sidebar--item"> Bookings</span>
+                   </a>
+                </li>
+                
 
 
                  <li>
@@ -84,12 +103,7 @@ if (isset($_POST["submit"]))
                         <span class="sidebar--item">Teachers List</span>
                     </a>
                 </li>
-                <li>
-                    <a href="adddoc.php">
-                        <span class="icon icon-4"><i class="ri-user-add-line"></i></span>
-                        <span class="sidebar--item">Add Teachers</span>
-                    </a>
-                </li>
+                
             
                 <li>
                     <a href="manage_drleave.php">
@@ -101,6 +115,18 @@ if (isset($_POST["submit"]))
                     <a href="removedoctor.php">
                     <span class="icon icon-4"><i class="ri-user-line"></i></span>
                         <span class="sidebar--item">Manage Teachers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="id">
+                        <span class="icon icon-2"><i class="ri-pie-chart-box-line"></i></span>
+                        <span class="sidebar--item">Employee Id card</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="report.php">
+                        <span class="icon icon-6"><i class="ri-feedback-fill"></i></span>
+                        <span class="sidebar--item">Course report</span>
                     </a>
                 </li>
                 <li>
